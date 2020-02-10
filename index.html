@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Intro</title>
+</head>
+<body>
+	<script>
+		alert('hello world!')
+
+		// 대체적으로 C와 다르지 않다(변수 타입이 없는것만 제외하고)
+		// 자바스크립트 객체 만들기 
+		var person = 
+		{
+			name:  "GroundP",
+			age:31,
+			nation: "korea"
+		}
+
+		// 자바스크립트 함수 만들기
+		function logTask(task)
+		{
+			console.log(task + ": 완료");
+			console.log("-");
+		}
+
+		logTask(person["name"]);
+		logTask(person["age"]);
+		logTask(person["nation"]);
+
+		var InputValue = window.prompt("한 자리 숫자를 적어주세요.");
+
+		if ( InputValue == '7' )
+		{
+			alert('7입니다.')
+		}
+		else
+		{
+			alert('7이 아닙니다.')
+		}
+
+
+
+	</script>
+</body>
+</html>
